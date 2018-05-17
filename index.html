@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(window).on('hashchange', function(){
+                        var page = window.location.hash;
+                        $(".page").hide();
+                        if (page == "") $("#0").show();
+                        else{
+                            $(page).show();
+                        }
+                    })
+
+                    $(window).trigger("hashchange");
+                })
+            </script>
+            <style>
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .page {
+                    width: 500px;
+                    height: 500px;
+                    height: auto;
+                    float: left;
+                    margin: 3px;
+                    padding: 3px;
+                }
+            </style>
+    </head>
+    <body>
+        <div id="0" class="page">
+            <img src="img/0.jpg">
+            <button onclick="location.href='#1'" type="button">YES</button>
+            <button>NO</button>
+        </div>
+        <div id="1" class="page">
+                <img src="img/1.jpg">
+                <button onclick="location.href='#2'" type="button">NEXT</button>
+        </div>
+        <div id="2" class="page">
+                <img src="img/2.jpg">
+                <button onclick="location.href='#3'" type="button">NEXT</button>
+        </div>
+        <div id="3" class="page">
+                <img src="img/3.jpg">
+                <button onclick="location.href='#4'" type="button">NEXT</button>
+        </div>
+        <div id="4" class="page">
+                <img src="img/4.jpg">
+                <button onclick="location.href='#5'" type="button">NEXT</button>
+        </div>
+        <div id="5" class="page">
+                <img src="img/5.jpg">
+                <button onclick="location.href='#6'" type="button">NEXT</button>
+        </div>
+        <div id="6" class="page">
+                <img src="img/6.jpg">
+                <button onclick="location.href='#7'" type="button">NEXT</button>
+        </div>
+        <div id="7" class="page">
+                <img src="img/7.jpg">
+                <button onclick="location.href='#8'" type="button">NEXT</button>
+        </div>
+        <div id="8" class="page">
+                <img src="img/8.jpg">
+                <button onclick="location.href='#9'" type="button">NEXT</button>
+        </div>
+        <div id="9" class="page">
+                <img src="img/9.jpg">
+                <button onclick="location.href='#10'" type="button">NEXT</button>
+        </div>
+        <div id="10" class="page">
+                <img src="img/10.jpg">
+                <button onclick="location.href='#11'" type="button">NEXT</button>
+        </div>
+        <div id="11" class="page">
+                <img src="img/11.jpg">
+                <button onclick="location.href='#12'" type="button">NEXT</button>
+        </div>
+        <div id="12" class="page">
+                <img src="img/12.jpg">
+                <button onclick="location.href='#13'" type="button">NEXT</button>
+        </div>
+        <div id="13" class="page">
+                <img src="img/13.jpg">
+                <button onclick="location.href='#14'" type="button">NEXT</button>
+        </div>
+        <div id="14" class="page">
+                <img src="img/14.jpg">
+                <button onclick="location.href='#15'" type="button">NEXT</button>
+        </div>
+        <div id="15" class="page">
+                <img src="img/15.jpg">
+                <button onclick="location.href='#15v2'" type="button">NEXT</button>
+        </div>
+        <div id="15v2" class="page">
+                <img src="img/15.jpg">
+                <button onclick="location.href='#16'" type="button">（心裡稍稍罵）噗，竟然是miss poon</button>
+                <button onclick="location.href='#18'" type="button">太好了，今後我要跟潘老師好好相處</button>
+        </div>
+        <div id="16" class="page">
+                <img src="img/16.jpg">
+                <button onclick="location.href='#17'" type="button">NEXT</button>
+        </div>
+        <div id="17" class="page">
+                <img src="img/17.jpg">
+                <button onclick="location.href='#21'" type="button">NEXT</button>
+        </div>
+        <div id="18" class="page">
+                <img src="img/18.jpg">
+                <button onclick="location.href='#19'" type="button">NEXT</button>
+        </div>
+        <div id="19" class="page">
+                <img src="img/19.jpg">
+                <button onclick="location.href='#20'" type="button">NEXT</button>
+        </div>
+        <div id="20" class="page">
+                <img src="img/20.jpg">
+                <button onclick="location.href='#21'" type="button">NEXT</button>
+        </div>
+        <div id="21" class="page">
+                <img src="img/21.jpg">
+                <button onclick="location.href='#22'" type="button">NEXT</button>
+        </div>
+        <div id="22" class="page">
+                <img src="img/22.jpg">
+                <button onclick="location.href='#22v2'" type="button">NEXT</button>
+        </div>
+        <div id="22v2" class="page">
+                <img src="img/22.jpg">
+                <button onclick="location.href='#23'" type="button">不了</button>
+                <button onclick="location.href='#25'" type="button">可以呀</button>
+        </div>
+        <div id="23" class="page">
+                <img src="img/23.jpg">
+                <button onclick="location.href='#23v2'" type="button">NEXT</button>
+        </div>
+        <div id="23v2" class="page">
+                <img src="img/23.jpg">
+                <button onclick="location.href='#24'" type="button">我不會游泳</button>
+                <button onclick="location.href='#25'" type="button">Ummmm 好吧</button>
+        </div>
+        <div id="24" class="page">
+                <img src="img/24.jpg">
+                <button onclick="location.href='#26'" type="button">NEXT</button>
+        </div>
+        <div id="25" class="page">
+                <img src="img/25.jpg">
+                <button onclick="location.href='#26o2n4'" type="button">NEXT</button>
+        </div>
+        <div id="26" class="page">
+                <img src="img/26.jpg">
+                <button onclick="location.href='#27'" type="button">NEXT</button>
+        </div>
+        <div id="26o2n4" class="page">
+                <img src="img/26.jpg">
+                <button onclick="location.href='#28'" type="button">NEXT</button>
+        </div>
+        <div id="27" class="page">
+                <img src="img/27.jpg">
+        </div>
+        <div id="28" class="page">
+                <img src="img/28.jpg">
+                <button onclick="location.href='#29'" type="button">NEXT</button>
+        </div>
+        <div id="29" class="page">
+                <img src="img/29.jpg">
+                <button onclick="location.href='#30'" type="button">NEXT</button>
+        </div>
+        <div id="30" class="page">
+                <img src="img/30.jpg">
+                <button onclick="location.href='#31'" type="button">NEXT</button>
+        </div>
+        <div id="31" class="page">
+                <img src="img/31.jpg">
+                <button onclick="location.href='#32'" type="button">NEXT</button>
+        </div>
+        <div id="32" class="page">
+                <img src="img/32.jpg">
+                <button onclick="location.href='#33'" type="button">NEXT</button>
+        </div>
+        <div id="33" class="page">
+                <img src="img/33.jpg">
+                <button onclick="location.href='#34'" type="button">NEXT</button>
+        </div>
+        <div id="34" class="page">
+                <img src="img/34.jpg">
+                <button onclick="location.href='#35'" type="button">NEXT</button>
+        </div>
+        <div id="35" class="page">
+                <img src="img/35.jpg">
+        </div>
+
+
+    </body>
+</html>

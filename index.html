@@ -5,6 +5,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
             <script>
                 $(document).ready(function(){
+                    $("audio")[0].play();
                     $(window).on('hashchange', function(){
                         var page = window.location.hash;
                         $(".page").hide();
@@ -35,7 +36,7 @@
     </head>
     <body>
         <audio autoplay loop>
-                <source src="bgm.ogg" type="audio/ogg">
+                <source src="bgm.mp3" type="audio/mpeg">
         </audio>
         <div id="0" class="page">
             <img src="img/0.jpg">
